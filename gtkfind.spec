@@ -36,15 +36,15 @@ install -s -m 755 gtkfind %buildroot%_bindir
 install -m 444 gtkfind.1 %buildroot%_mandir/man1
 
 
-mkdir -p %buildroot%_menudir
-cat > %buildroot%_menudir/%{name} <<EOF
-?package(%{name}):\
-command="%_bindir/%name"\
-title="Gtkfind"\
-longtitle="Graphical file finding program"\
-needs="x11"\
-icon="file_tools_section.png"\
-section="System/File Tools"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%_bindir/%name
+Name=Gtkfind
+Comment=Graphical file finding program
+Icon=file_tools_section
+Categories=X-MandrivaLinux-System-FileTools;System;
 EOF
  
 %post
@@ -61,5 +61,5 @@ rm -fr $RPM_BUILD_ROOT
 %doc README COPYING INSTALL
 %_bindir/%name
 %{_mandir}/man1/*
-%{_menudir}/*
+%{_datadir}/applications/mandriva-*.desktop
 
