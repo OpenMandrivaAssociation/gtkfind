@@ -11,7 +11,7 @@ Group    : File tools
 Source0  : %{name}-%{version}.tar.bz2
 URL      : http://www.oz.net/~mattg/download.html
 BuildRoot: %{_tmppath}/%{name}-buildroot
-Buildrequires: xterm libgtk+-devel
+Buildrequires: xterm libgtk+-devel man
 
 %description
 gtkfind is a graphical file finding program, written by Matt Grossman
