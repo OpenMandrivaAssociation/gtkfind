@@ -1,5 +1,5 @@
 %define name gtkfind
-%define release %mkrel 8
+%define release %mkrel 10
 %define version 1.1
 
 Summary  : A graphical file finding program
