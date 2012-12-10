@@ -67,3 +67,66 @@ rm -fr $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 %{_datadir}/applications/mandriva-*.desktop
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 1.1-12mdv2011.0
++ Revision: 619287
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 1.1-11mdv2010.0
++ Revision: 429336
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.1-10mdv2009.0
++ Revision: 246686
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Thu Jan 03 2008 Thierry Vignaud <tv@mandriva.org> 1.1-8mdv2008.1
++ Revision: 141938
+- auto-convert XDG menu entry
+- BR man
+- kill re-definition of %%buildroot on Pixel's request
+- import gtkfind
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Fri Apr 08 2005 Olivier Thauvin <nanardon@mandrake.org> 1.1-8mdk
+- fix menu path
+
+* Wed Apr 26 2004 Lenny Cartier <lenny@mandrakesoft.com 1.1-7mdk
+- rebuild
+
+* Wed Apr 30 2003 Lenny Cartier <lenny@mandrakesoft.com 1.1-6mdk
+- buildrequires
+
+* Fri Jan 24 2003 Lenny Cartier <lenny@mandrakesoft.com 1.1-5mdk
+- rebuild
+
+* Fri Jun 14 2002 Lenny Cartier <lenny@mandrakesoft.com 1.1-4mdk
+- buildrequires
+
+* Wed Jan 30 2002 Lenny Cartier <lenny@mandrakesoft.com> 1.1-3mdk
+- icon
+
+* Wed Jul 25 2001  Lenny Cartier <lenny@mandrakesoft.com> 1.1-2mdk
+- rebuild
+
+* Mon Sep 04 2000 Lenny Cartier <lenny@mandrakesoft.com> 1.1-1mdk
+- BM
+- macros 
+- menu
+
+* Thu Apr 27 2000 Lenny Cartier <lenny@mandrakesoft.com> 0.9-2mdk
+- fix group
+- fix files section
+
+* Wed Dec 22 1999 Lenny Cartier <lenny@mandrakesoft.com>
+- fix location of files
+- bz2 archive
+
