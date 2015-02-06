@@ -1,7 +1,7 @@
 Summary:	A graphical file finding program
 Name:		gtkfind
 Version:	1.1
-Release:	13
+Release:	14
 License:	GPLv2+
 Group:		File tools
 Source0:	%{name}-%{version}.tar.bz2
