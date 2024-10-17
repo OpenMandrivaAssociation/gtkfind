@@ -5,7 +5,7 @@ Release:	14
 License:	GPLv2+
 Group:		File tools
 Source0:	%{name}-%{version}.tar.bz2
-Url:		http://www.oz.net/~mattg/download.html
+Url:		https://www.oz.net/~mattg/download.html
 BuildRequires:	man
 BuildRequires:	xterm
 BuildRequires:	pkgconfig(gtk+)
